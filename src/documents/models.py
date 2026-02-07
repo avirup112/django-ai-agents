@@ -10,7 +10,7 @@ class Document(models.Model):
     title = models.CharField(max_length=255, default="Title")
     content = models.TextField(blank=True, null=True)
     active = models.BooleanField(default=True)
-    active_at = models.DateTimeField(auto_now_add=False,auto_now=False, null=True) # when the document is active, this field will be updated with the current time
+    active_at = models.DateTimeField(auto_now_add=False,auto_now=False, blank=True, null=True) # when the document is active, this field will be updated with the current time
     created_at = models.DateTimeField(auto_now_add=True) #db auto update this field when it's created
     updared_at = models.DateTimeField(auto_now=True) # db auto update this field when it's updated
 
