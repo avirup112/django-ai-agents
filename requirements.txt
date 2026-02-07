@@ -1,0 +1,6 @@
+Django >= 5.0, < 6.0
+jupyter
+langchain-groq
+langgraph
+python-decouple
+permit
