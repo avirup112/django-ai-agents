@@ -1,1 +1,2 @@
-django
+django/
+src\db.sqlite3
